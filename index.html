@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang='pt-br'>
+
 <head>
 	<meta charset="utf-8">
 	<title>Calculadora de salários</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 <body>
-	<h1>Conversor de $alário</h1>
-	<p>Digite o seu salário mensal que nós calculamos quanto você ganha por hora.</p>
-	<div>
-		<input type="text" id="salario" placeholder="Digite o seu salário"></input>
-		<button id="btn-converter">Converter</button>
-		<p id='resultado-conversao'></p>
+	<div class="text-center border-8 border-green-300 h-screen">
+		<h1 class='text-green-400 text-5xl mt-24 mb-12'>Conversor de $alário</h1>
+		<p class="mt-4 text-xl text-gray-800">Digite o seu salário mensal que nós calculamos quanto você ganha por hora.
+		</p>
+		<div>
+			<input class='rounded-md pl-2 text-lg outline-none ring-2 ring-green-300 mt-4' type="number" id="salario"
+				placeholder="Digite o seu salário (R$)"></input>
+			<button class='border-2 border-green-300 rounded-md text-lg px-2' id="btn-converter">Converter</button>
+			<p id='resultado-conversao' class="text-gray-800 mt-6 text-xl"></p>
+		</div>
+		<p class="mt-48">** Este conversor considera a carga horária de 44 horas semanais **</p>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
